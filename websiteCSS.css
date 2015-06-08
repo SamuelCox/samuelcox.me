@@ -1,0 +1,96 @@
+body
+{
+margin:0;
+padding:0;
+background-color:#7D7788;
+}
+#nav-bar  
+{
+background-color:#7D7788;
+border: 2px solid;
+font-weight:bold;
+}
+#nav-bar  a
+{
+color:#000000;
+font-family:"Fixedsys", monospace;
+font-style:italic;
+}
+a
+{
+font-family:"Lucida Console", monospace;
+}
+header
+{
+position:relative;
+top:-20px;
+left:-1px;
+}
+h1
+{
+text-decoration:underline;
+font-family:"Fixedsys", monospace;
+color:#000000;
+font-weight:bold;
+}
+#startOfContent, .content
+{
+font-family:"Lucida Console", monospace;
+color:#000000;
+position:relative;
+top:3px;
+left:-1px;
+}
+.text-header
+{
+text-decoration:underline;
+font-weight:bold;
+font-family:"Lucida Console", monospace;
+}
+#Qualifications-header
+{
+position:relative;
+top:10px;
+}
+#aboutContent, #About
+{
+font-family:"Lucida Console", monospace;
+color:#000000;
+position:relative;
+overflow:visible;
+}
+#qualContent, #projectsContent
+{
+font-family:"Lucida Console", monospace;
+color:#000000;
+position:relative;
+top:10px;
+left:-1px;
+}
+#credits
+{
+position:relative;
+top:30px;
+left:-1px;
+color: #7D7788;
+}
+button {
+background-color:black;
+width:100px;
+height:60px;
+font-weight:bold;
+color:white;
+font-size:30px;
+}
+#calcWindow {
+width:313px;
+font-size: 30px;
+}
+#calculator {
+width:700px;
+
+padding:0px;
+}
+#choose {
+font-size: 22px;
+}
