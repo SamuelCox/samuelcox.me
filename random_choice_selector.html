@@ -1,77 +1,79 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset = "UTF-8">
-<link rel = "stylesheet" type = "text/css" href = "websiteCSS.css">
-<script>
+    <meta charset="UTF-8">
+    <link href="websiteCSS.css" rel="stylesheet" type="text/css">
+    <script>
 function choiceEvaluate() {
-<!-- Assign each forms value to a variable-->
+    <!-- Assign each forms value to a variable-->
     var choice1 = document.getElementById("choice1").value;
-	var choice2 = document.getElementById("choice2").value;
-	var choice3 = document.getElementById("choice3").value;
-	var choice4 = document.getElementById("choice4").value;
-	var choice5 = document.getElementById("choice5").value;
-	<!--Pick a random number that ranges inclusively between those variables-->
-	var selector = Math.floor((Math.random() * 5) + 1); 
-	<!--Switch statement that, based on which number was picked, chooses which choice to choose-->
-	switch(selector) {
-	case 1:
-	document.getElementById("selectedChoice").value = choice1;
-	break;
-	case 2:
-	document.getElementById("selectedChoice").value = choice2;
-	break;
-	case 3:
-	document.getElementById("selectedChoice").value = choice3;
-	break;
-	case 4:
-	document.getElementById("selectedChoice").value = choice4;
-	break;
-	case 5:
-	document.getElementById("selectedChoice").value = choice5;
-	break;
-	}
-}
-</script>
-<title> Random Choice Selector</title>
+    var choice2 = document.getElementById("choice2").value;
+    var choice3 = document.getElementById("choice3").value;
+    var choice4 = document.getElementById("choice4").value;
+    var choice5 = document.getElementById("choice5").value;
+    <!--Pick a random number that ranges inclusively between those variables-->
+    var selector = Math.floor((Math.random() * 5) + 1); 
+    <!--Switch statement that, based on which number was picked, chooses which choice to choose-->
+    switch(selector) {
+    case 1:
+    document.getElementById("selectedChoice").value = choice1;
+    break;
+    case 2:
+    document.getElementById("selectedChoice").value = choice2;
+    break;
+    case 3:
+    document.getElementById("selectedChoice").value = choice3;
+    break;
+    case 4:
+    document.getElementById("selectedChoice").value = choice4;
+    break;
+    case 5:
+    document.getElementById("selectedChoice").value = choice5;
+    break;
+    }
+    }
+    </script>
+
+    <title>Random Choice Selector</title>
 </head>
+
 <body>
-<div id = "nav-bar">
-<a href = "index.html">Home</a>
-&nbsp;|
-<a href = "random_choice_selector.html">Random Choice Selector</a>
-&nbsp;|
-<a href = "placement_blog.html">Placement Blog</a>
-&nbsp;|
-<a href = "floating_point_calculator.html">Floating Point Calculator</a>
-</div>
-<br>
-<header>
-<h1>
-Random Choice Selector
-</h1>
-</header>
-<div id = "About">
-Enter the decisions/ choices you want to choose between in the following forms,<br>
-then click the choose button. It will choose randomly between one of those.<br>
-Furthermore, if one of the forms is left blank, it is possible to be chosen. <br>
-This may be reworked at a later date. 
-<br>
-<br>
-</div>
-<div id = "choiceForm">
-<form name="ChoiceSelection">
-Choice 1 <input type = "text" name="choice1" id="choice1"><br>
-Choice 2 <input type = "text" name="choice2" id="choice2"><br>
-Choice 3 <input type = "text" name="choice3" id="choice3"><br>
-Choice 4 <input type = "text" name="choice4" id="choice4"><br>
-Choice 5 <input type = "text" name="choice5" id="choice5">
-</form>
-</div>
-<!--Calls choiceEvaluate-->
-<button id = "choose" type = "button" onclick = "choiceEvaluate();">Choose </button>
-<form name = "chosenChoice">
-<input type = "text" name = "selectedChoice" id = "selectedChoice">
-</form>
+    <div id="nav-bar">
+        <a href="index.html">Home</a> &nbsp;| <a href=
+        "random_choice_selector.html">Random Choice Selector</a> &nbsp;|
+        <a href="placement_blog.html">Placement Blog</a> &nbsp;| <a href=
+        "floating_point_calculator.html">Floating Point Calculator</a>
+    </div><br>
+
+    <header>
+        <h1>Random Choice Selector</h1>
+    </header>
+
+    <div id="About">
+        Enter the decisions/ choices you want to choose between in the
+        following forms,<br>
+        then click the choose button. It will choose randomly between one of
+        those.<br>
+        Furthermore, if one of the forms is left blank, it is possible to be
+        chosen.<br>
+        This may be reworked at a later date.<br>
+        <br>
+    </div>
+
+    <div id="choiceForm">
+        <form id="ChoiceSelection" name="ChoiceSelection">
+            Choice 1 <input id="choice1" name="choice1" type="text"><br>
+            Choice 2 <input id="choice2" name="choice2" type="text"><br>
+            Choice 3 <input id="choice3" name="choice3" type="text"><br>
+            Choice 4 <input id="choice4" name="choice4" type="text"><br>
+            Choice 5 <input id="choice5" name="choice5" type="text">
+        </form>
+    </div><!--Calls choiceEvaluate-->
+    <button id="choose" onclick="choiceEvaluate();" type=
+    "button">Choose</button>
+
+    <form id="chosenChoice" name="chosenChoice">
+        <input id="selectedChoice" name="selectedChoice" type="text">
+    </form>
 </body>
 </html>
